@@ -1,0 +1,18 @@
+.number{
+    font-weight: 800;
+    border: 0.5px solid  #92d9ff;
+    font-weight: 900;
+    margin: auto;
+    text-align: center;
+    padding: auto;
+}
+.name{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+.speed{
+    color: #0070ac;
+}
