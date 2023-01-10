@@ -3,7 +3,7 @@ import { Container, Wrapper,  } from "./style";
 // import { Image,Button } from "antd";
 import { useNavigate } from 'react-router-dom'
 // import img from '../../assets/images/not-found1.png'
-import { Button } from "../../genericUI";
+import { Button } from "../../Generic";
 
 const NotFound = () => {
   const navigate = useNavigate();

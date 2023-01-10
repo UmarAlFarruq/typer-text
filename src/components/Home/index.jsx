@@ -1,9 +1,8 @@
-import { Button, Container } from './../../genericUI';
+import { Button, Container,Table } from './../../Generic';
 import { Card, Content, Img, P, Title, Wrapper, WrapperText } from './style';
 import car from '../../assets/img/car3.jpg'
 import carrace from '../../assets/img/car.png'
 import carRace from '../../assets/img/carrace.jpg'
-import Table from '../../genericUI/Table';
 import { useNavigate } from 'react-router-dom';
 import Loading from '../Loading';
 import { useState } from 'react';
@@ -13,12 +12,10 @@ const Home = () => {
     const [start, setStart] = useState(true)
     const startGame = (e) => {
         setStart(false)
-        console.log(e);
         setTimeout(() => {
             navigate(e)
             setStart(true)
         }, 8000)
-
     }
 
     return (

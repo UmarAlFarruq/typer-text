@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { device } from '../../utils/responsive'
 
 export const Containerr = styled.div`
+    box-sizing: border-box;
     max-width: 1440px;
     min-width: 350px;
     width: 100%;
@@ -11,7 +12,6 @@ export const Containerr = styled.div`
     justify-content: ${({ al }) => al || 'start'};
     padding: ${({ p }) => p || 0};
     margin: ${({ p }) => p || 0};
-    box-sizing: border-box;
     
     @media ${device.mobile}{
         padding: 0 1px;

@@ -1,5 +1,5 @@
 
-import { Button, Container } from './../../genericUI';
+import { Button, Container } from './../../Generic';
 import { useNavigate } from 'react-router-dom';
 
 

@@ -10,9 +10,11 @@ export const Wrapper = styled.div`
     gap: 15px;
     width: 100%;
     height: fit-content;
-    padding: 4px;
+    box-sizing: border-box;
+    
     @media ${device.mobile} {
       gap: 5px;
+      padding: 4px;
     }
     @media ${device.tablet} {
        gap: 8px;

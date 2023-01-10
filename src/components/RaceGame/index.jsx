@@ -1,22 +1,13 @@
 
-import { Container } from './../../genericUI';
-import { Div, Input, Wrapper, WrapperInput, WrapperText } from './style';
+import TyperText from '../TyperText';
+import { Container } from './../../Generic';
 
-const RaceText = () => {
+const RaceGame = () => {
     return (
-        <Container>
-            <Wrapper>
-                <Div>
-                    <WrapperText>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis et perferendis laudantium! Error dignissimos iusto nam nemo repellat, quae sapiente!
-                    </WrapperText>
-                    <WrapperInput>
-                        <Input placeholder='input' />
-                    </WrapperInput>
-                </Div>
-            </Wrapper>
+        <Container fc={1} jc={'center'} >
+            <TyperText />
         </Container>
     );
 }
 
-export default RaceText;
+export default RaceGame;
