@@ -77,19 +77,20 @@ export const ImgShina1 = styled.img`
     width: 25px;
     bottom: -6px;
     animation: ${shina} 8s;
+    border-radius: 50%;
     @media ${device.mobile} {
-        width: 10px;
-        left: 2px;
+        width: 8px;
+        left: 3px;
         bottom: -3px;
     }
     @media ${device.tablet} {
-        width: 17px;
-        left:3px ;
-        bottom: -6px;
+        width: 13px;
+        left:5px ;
+        bottom: -4px;
     }
     @media ${device.dectop} {
-        width: 25px;
-        left:5px ;
+        width: 19px;
+        left:9px ;
     }
 `
 export const ImgShina2 = styled.img`
@@ -97,21 +98,21 @@ export const ImgShina2 = styled.img`
     width: 25px;
     left: 55px;
     bottom: -6px;
-    animation: ${shina} 8s;
+    border-radius: 50%;
     animation: ${shina} 8s;
     @media ${device.mobile} {
-        width: 10px;
+        width: 8px;
         left: 23px;
         bottom: -3px;
     }
     @media ${device.tablet} {
-        width: 17px;
-        left:36px ;
-        bottom: -6px;
+        width: 13px;
+        left:38px ;
+        bottom: -4px;
     }
     @media ${device.dectop} {
-        width: 25px;
-        left:55px ;
+        width: 19px;
+        left:58px ;
     }
 `
 

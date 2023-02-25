@@ -4,7 +4,7 @@ import { Container } from './../../Generic';
 
 const RaceGame = () => {
     return (
-        <Container fc={1} jc={'center'} >
+        <Container fc={1} jc={'center'} mt={'15px'} >
             <TyperText />
         </Container>
     );

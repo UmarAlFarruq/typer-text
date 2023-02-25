@@ -1,14 +1,16 @@
 import { Button, Container,Table } from './../../Generic';
 import { Card, Content, Img, P, Title, Wrapper, WrapperText } from './style';
-import car from '../../assets/img/car3.jpg'
-import carrace from '../../assets/img/car.png'
-import carRace from '../../assets/img/carrace.jpg'
+import car from '../../assets/img/globalpage.jpg';
+import carRace from '../../assets/img/testpage.jpg';
+import carrace from '../../assets/img/frendspage.jpg';
 import { useNavigate } from 'react-router-dom';
 import Loading from '../Loading';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+    const {t} = useTranslation()
     const [start, setStart] = useState(true)
     const startGame = (e) => {
         setStart(false)
@@ -26,8 +28,8 @@ const Home = () => {
                         <Card>
                             <Content>
                                 <WrapperText>
-                                    <Title>TypeRacer - The Global Typing Competition</Title>
-                                    <P>Increase your typing speed while racing against others!</P>
+                                    <Title>{t('home.global.title')}</Title>
+                                    <P>{t('home.global.text')}</P>
                                 </WrapperText>
                                 <Button
                                     onClick={() => startGame('/raceGame')}
@@ -36,7 +38,7 @@ const Home = () => {
                                     width={'65%'}
                                     height="52px"
                                 >
-                                    Enter Race game
+                                    {t('home.global.button')}
                                 </Button>
                             </Content>
                             <Img src={car}  ></Img>
@@ -44,18 +46,18 @@ const Home = () => {
                         <Card>
                             <Content>
                                 <WrapperText>
-                                    <Title>Typing Test</Title>
-                                    <P>Improve your typing skills on your own</P>
+                                    <Title>{t('home.test.title')}</Title>
+                                    <P>{t('home.test.text')}</P>
                                 </WrapperText>
-                                <Button fontsize='20px' type={'primary'} width={'65%'} >Practice YourSelf</Button>
+                                <Button fontsize='20px' type={'primary'} width={'65%'} >{t('home.test.button')}</Button>
                             </Content>
                             <Img src={carRace}  ></Img>
                         </Card>
                         <Card>
                             <Content>
                                 <WrapperText>
-                                    <Title>Race your friends</Title>
-                                    <P>Create your own racetrack and play with friends</P>
+                                    <Title>{t('home.friends.title')}</Title>
+                                    <P>{t('home.friends.text')}</P>
                                 </WrapperText>
                                 <Button
                                     fontsize='20px'
@@ -63,12 +65,12 @@ const Home = () => {
                                     width={'65%'}
                                     onClick={() => startGame('/raceGame')}
                                 >
-                                    Create Racetrack
+                                    {t('home.friends.button')}
                                 </Button>
                             </Content>
                             <Img src={carrace}  ></Img>
                         </Card>
-                        <Table />
+                        <Table   />
                     </Wrapper>
                     : <Loading />
             }

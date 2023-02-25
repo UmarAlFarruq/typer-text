@@ -26,7 +26,7 @@ const getType = (type) => {
         default:
             return {
                 border: '1px solid #E9E9EC',
-                color: '#FFFFFF',
+                color: ' #0d263b',
             }
 
     }
@@ -39,7 +39,7 @@ const Container = styled.button`
     font-weight: 400;
     line-height: 20px;
     background: none;
-    height: 44px;
+    height: ${({ height }) => `${height}px` || '44px'};
     padding:${({ pd }) => `${pd}px`} ;
     white-space:nowrap ;
     margin-top: ${({ mt }) => `${mt}px`};
@@ -48,6 +48,7 @@ const Container = styled.button`
     margin-left: ${({ ml }) => `${ml}px`};
     border-radius: 2px;
     font-family:sans-serif;
+    border:${({ border }) => border}
     cursor: pointer;
     ${({ type }) => getType(type)}
     :active{

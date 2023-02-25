@@ -5,6 +5,7 @@ export const Button = ({
     children,
     fontsize,
     onClick,
+    disabled,
     width,
     height,
     type,
@@ -12,7 +13,8 @@ export const Button = ({
     mr,
     ml,
     mb,
-    mt
+    mt,
+    border
 
 }) => {
     return (
@@ -28,6 +30,8 @@ export const Button = ({
             ml={ml}
             size={size}
             fontsize={fontsize}
+            border={border}
+            disabled={disabled}
         >
             {children}
         </Container>

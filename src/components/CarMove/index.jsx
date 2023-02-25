@@ -8,7 +8,7 @@ import car6 from '../../assets/img/racecar6.png'
 
 
 const CarMove = ({ ml, wpm }) => {
-    let random = Math.floor(Math.random() * 10);
+    
     const [count, setCount] = useState(0)
 
     useEffect(() => {
@@ -40,11 +40,11 @@ const CarMove = ({ ml, wpm }) => {
                         <Popover ml={ml} >
                             <P.Place>You:</P.Place>
                             <PopoverInfo>
-                                <P.Place>Speed{`${Math.floor(ml) || 0}  CPM`.padStart(26, '.')}</P.Place>
-                                <P.Place>Last race{`${random + random + 10} CPM`.padStart(21, '.')}</P.Place>
-                                <P.Place>Best race{`${random * 3 + 10 || 0}  CPM`.padStart(21, '.')}</P.Place>
-                                <P.Place>Points{`${random}`.padStart(20, '.')}</P.Place>
-                                <P.Place>Races completed{`${Math.floor(random / 3)}`.padStart(11, '.')}</P.Place>
+                                <P.Place>Speed{`${wpm|| 0} wpm`.padStart(27, '.')}</P.Place>
+                                <P.Place>Last race{`0 CPM`.padStart(21, '.')}</P.Place>
+                                <P.Place>Best race{`0  CPM`.padStart(22, '.')}</P.Place>
+                                <P.Place>Points{`0`.padStart(20, '.')}</P.Place>
+                                <P.Place>Races completed{`0`.padStart(11, '.')}</P.Place>
                                 <P.Place>Country  {'Uzbekistan '.padStart(19, '.')}</P.Place>
                             </PopoverInfo>
                         </Popover>

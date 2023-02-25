@@ -1,0 +1,56 @@
+{
+    "test": " Welcome to Engilish",
+    "lenguage":"English",
+    "navbar": {
+        "signin": "Sing In",
+        "signup": "Sign Up",
+        "lenguage":"English"
+    },
+    "home":{
+        "global":{
+            "title":"TextRacer - The Global Typing Competition",
+            "text":"Increase your typing speed while racing against others!",
+            "button":"Enter Race game"
+        },
+        "test":{
+            "title":"Typing Test",
+            "text":"Improve your typing skills on your own",
+            "button":"Practice YourSelf"
+        },
+        "friends":{
+            "title":"Race your friends",
+            "text":"Create your own racetrack and play with friends",
+            "button":"Create Racetrack"
+        },
+        "table":{
+            "title":"",
+            "text":"",
+            "name":"Name",
+            "speed":"Speed",
+            "time":"Time",
+            "ago":"minutes ago"
+        }
+    },
+    "your_result":{
+        "madal":{
+            "title":"Sorry you'ar out of time!",
+            "text":"We've reduced your text difficulty to 'Beginner,' so that you will get more time for the next race."
+        },
+        "result":{
+            "title":"You just typed a quote from the song",
+            "text":"",
+            "p_value":"We Will Become Silhouettes",
+            "p_title":"by The Postal Service(submitted by izzy180)",
+            "speed":"Your speed",
+            "time":"Time",
+            "didnt_play":"you didn't play",
+            "accuracy":"Accuracy",
+            "info":"this score will not be saved since you didn't finish typing the text in time."
+        },
+        "button":{
+            "race_again":"Race again",
+            "main_menu":"Main menu (leave race)"
+        } 
+
+    }
+}

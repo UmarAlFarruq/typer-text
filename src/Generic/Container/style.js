@@ -11,7 +11,8 @@ export const Containerr = styled.div`
     align-items: ${({ jc }) => jc || 'start'};
     justify-content: ${({ al }) => al || 'start'};
     padding: ${({ p }) => p || 0};
-    margin: ${({ p }) => p || 0};
+    margin: ${({ m }) => m || 0};
+    margin-top: ${({ mt }) => mt || 0};
     
     @media ${device.mobile}{
         padding: 0 1px;

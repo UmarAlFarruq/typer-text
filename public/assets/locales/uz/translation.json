@@ -1,0 +1,34 @@
+{
+    "test": " Uzbek tiliga hush kelibsiz",
+    "lenguage": "Uzbek",
+    "navbar": {
+        "signin": "Kirish",
+        "signup": "Ro'yxatdan o'tish",
+        "lenguage": "Uzbek"
+    },
+    "home": {
+        "global": {
+            "title": "TextRacer - Global Typing Competition",
+            "text": "Boshqalar bilan poygada yozish tezligini oshiring!",
+            "button": "Poygani boshlash"
+        },
+        "test": {
+            "title": "O'zingizni sinash uchun o'yin",
+            "text": "Matn yozish qobiliyatingizni mustaqil ravishda yaxshilang",
+            "button": "O'zingizni mashq qildiring"
+        },
+        "friends": {
+            "title": "Do'stlaringiz bilan matn yozish poygasi o'ynang",
+            "text": "O'zingizning avtodromingizni yarating va do'stlaringiz bilan o'ynang",
+            "button": "Poyga trekini yaratish"
+        },
+        "table": {
+            "title": "",
+            "text": "",
+            "name": "Nomi",
+            "speed": "Teszlik",
+            "time": "Vaxt",
+            "ago": "daqiqa oldin"
+        }
+    }
+}

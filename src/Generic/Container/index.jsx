@@ -1,7 +1,7 @@
 
 import { Containerr } from './style'
 
-const Container = ({ children, al, p, m, jc, fc }) => {
+const Container = ({ children, al, p, m, jc, fc, mt }) => {
     return (
         <Containerr
             al={al}
@@ -9,6 +9,7 @@ const Container = ({ children, al, p, m, jc, fc }) => {
             fc={fc}
             p={p}
             m={m}
+            mt={mt}
         >
             {children}
         </Containerr>

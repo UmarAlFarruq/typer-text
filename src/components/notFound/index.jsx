@@ -1,20 +1,19 @@
 
 import { Container, Wrapper,  } from "./style";
-// import { Image,Button } from "antd";
+import { Image,Button } from "antd";
 import { useNavigate } from 'react-router-dom'
-// import img from '../../assets/images/not-found1.png'
-import { Button } from "../../Generic";
+import img from '../../assets/img/not-found.jpg'
 
 const NotFound = () => {
   const navigate = useNavigate();
   return (
     <Container>
       <Wrapper>
-        {/* <Image
+        <Image
           className="nocopy"
           preview={false}
           src={img}
-        /> */}
+        />
         <Wrapper.Text>
 
           <h1 className="nocopy"

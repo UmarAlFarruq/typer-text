@@ -1,9 +1,10 @@
+import Socket from "../../components/Socket";
 
 
 const SecketPage = () => {
     return (
         <h1>
-            {window.location.pathname}
+            <Socket />
         </h1>
     );
 }

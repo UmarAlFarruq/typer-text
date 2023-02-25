@@ -63,6 +63,7 @@ export const WrapTime = styled(Wrapper)`
     padding: 3%;
     @media ${device.mobile} {
         padding: 0 2%;
+        margin-bottom: 15px;
     }
     @media ${device.tablet} {
         padding: 0 1%;

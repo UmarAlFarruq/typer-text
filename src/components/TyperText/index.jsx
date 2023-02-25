@@ -19,7 +19,7 @@ const TyperText = () => {
         type: '',
         accuracy: 0,
     });
-    
+
     // Destructuring 
     const { active, error, before, accuracy: errorLength } = count;
 
@@ -32,7 +32,7 @@ const TyperText = () => {
     const [minuts, setMinuts] = useState(time > 60 ? Math.floor(time / 60) : 0);
     const [seconds, setSeconds] = useState(time > 60 ? time % 60 : time);
     let lifeTime = useMemo(() => { return (time - minuts * 60 - seconds) }, [before]);   // secondda text yozish vaxti
-    let wpm = useMemo(() => { return Math.floor(text.length * (before + active) / lifeTime) }, [before]);
+    let wpm = useMemo(() => { return Math.floor((text.length * (before + active)) / (3 * lifeTime)) }, [before]);
     var timer;
 
     ///////////////////////////         TIMER      //////////////////////////////

@@ -1,6 +1,6 @@
 import { Container, ImgCar, ImgShina1, ImgShina2, Wrapper, WrapperImg } from "./style";
 import car from '../../assets/img/loadingCar.jpg'
-import shina from '../../assets/img/balon.png'
+import shina from '../../assets/img/11.jpg'
 
 const Loading = () => {
     return (
